@@ -1,0 +1,19 @@
+{
+  "name": "hyperterm-hybrid",
+  "version": "0.0.1",
+  "description": "Hybrid theme for HyperTerm",
+  "license": "MIT",
+  "repository": "lvarayut/hyperterm-hybrid",
+  "author": {
+    "name": "Varayut Lerdkanlayanawat",
+    "email": "l.varayut@gmail.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hyperterm",
+    "hyperterm-theme",
+    "hyperterm-hybrid"
+  ]
+}
