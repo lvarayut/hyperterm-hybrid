@@ -1,9 +1,5 @@
 'use strict';
 
-// General colors
-const foregroundColor = '#c5c8c6';
-const backgroundColor = '#1d1f21';
-
 // Default colors
 const black = '#282a2d';
 const red = '#a54242';
@@ -24,12 +20,18 @@ const brightMagenta = '#b294bb';
 const brightCyan = '#8abeb7';
 const brightWhite = '#c5c8c6';
 
+// General colors
+const foregroundColor = '#c5c8c6';
+const backgroundColor = '#1d1f21';
+const cursorColor = brightWhite;
+const borderColor = '#282a2e';
+
 exports.decorateConfig = config => {
 	return Object.assign({}, config, {
 		backgroundColor,
 		foregroundColor,
-		borderColor: '#282a2e',
-		cursorColor: foregroundColor,
+		borderColor,
+		cursorColor,
 		colors: [
 			// Default colors
 			black,
@@ -53,6 +55,11 @@ exports.decorateConfig = config => {
 		],
 		css: `
 			${config.css || ''}
+
+
+      .tab_active:before {
+        border-color: ${white};
+      }
 		`
 	});
 };
